@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Game Suwit</title>
+        <head>
+            <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+            <style>
+                body {
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                #header{
+                    margin-top: 20px;
+                }
+                #konten {
+                    margin-top: 60px; 
+                }
+                #score{
+                    margin-top: 60px;
+                }
+                #footer {
+                    position: fixed;
+                    bottom: 20px;
+                    left: 600px;
+                }
+                #scoreKu{
+                    font-size: 30px;
+                }
+                #scoreComp {
+                    font-size: 30px;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="header">
+                <h1>Game Suwit</h1>
+                <h2>Silahkan klik untuk memilih karakter</h2>
+            </div>
+            <div id="konten">
+                Score Aku :  <span id="scoreKu">0</span> 
+                <img src="assets/gajah.png" alt="gajah" onclick="suwit('GAJAH')">
+                <span>VS</span>
+                <img src="assets/orang.png" alt="orang" onclick="suwit('ORANG')">
+                <span>VS</span>
+                <img src="assets/semut.png" alt="semut" onclick="suwit('SEMUT')">
+                Score Computer : <span id="scoreComp">0</span> 
+            </div>
+            <div id="score">
+                
+            </div>
+            <div id="footer">
+                <button onclick="document.location.reload(true)"><strong><h2>Main Lagi Yuk :)</h2></strong></button>
+            </div>
+        </body>
+        <script src="script.js"></script>
+</html>
